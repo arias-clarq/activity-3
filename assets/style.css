@@ -1,0 +1,156 @@
+
+@font-face {
+    font-family: 'MaharlikaFont';
+    src: url('fonts/Maharlika-DGAW.ttf') format('truetype'); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.navbar-custom {
+    position: relative;
+    /* border-bottom: 4px solid linear-gradient(90deg, #25DABB, #2544DA, #259EDA); Make sure to keep the border transparent to see the gradient */
+
+}
+
+.navbar-gradient-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg,  #fad1f6, #22adf3);
+    /* background: linear-gradient(90deg,  #445bf5, #f5ab44); */
+}
+
+.brand-font-custom {
+    font-family: 'MaharlikaFont', sans-serif;
+    
+}
+
+.brand-color{
+    color: #22adf3;
+}
+ /* Styles for small screens (e.g., phones) */
+ @media (max-width: 767px) {
+    .brand-font-custom {
+        display: none; /* Hide the full text on small screens */
+    }
+
+    .brand-font-custom-small {
+        display: inline-block; /* Show the small screen text */
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+    .brand-font-custom-small {
+        display: none; /* Hide the small screen text on larger screens */
+    }
+}
+
+body {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+.bg-gradient-custom {
+    width: 100%;
+    /* Set your desired width */
+    height: 100%;
+    /* Set your desired height */
+    background: linear-gradient(90deg,#f87eec, #22adf3);
+    /* Adjust the colors as per your preference */
+    border-radius: 20px;
+    background-size: 200% 100%;
+    animation: moveGradient 5s linear infinite;
+
+}
+
+
+.btn-sky {
+    background-color: #00bfdf;
+    border-color: #00bfdf;
+    color: aliceblue;
+}
+
+.btn-sky-rounded-end-custom {
+    background-color: #00bfdf;
+    border-color: #00bfdf;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    border-top-left-radius: 0 !important;
+    /* border-radius: 0 10px 0 10px !important; */
+}
+
+
+/* .btn-sky-rounded-end-custom {
+    background-color: #00bfdf;
+    border-color: #00bfdf;
+    border-radius: 0 5px 5px 0 !important;
+} */
+
+.btn-sky:hover {
+    background-color: #0093c4;
+    border-color: #0093c4;
+}
+
+.fixed-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .fixed-button::before {
+    content: "Add Product";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+    bottom: 30px;
+    right: 0;
+    white-space: nowrap;
+  }
+
+  .fixed-button:hover::before {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .bg-gradient-custom-member {
+    width: 100%;
+    /* Set your desired width */
+    height: 300px;
+    /* Set your desired height */
+    background: linear-gradient(90deg,#f87eec, #22adf3);
+    /* Adjust the colors as per your preference */
+    
+    background-size: 200% 100%;
+    animation: moveGradient 5s linear infinite;
+
+}
+
+
+  .member-row{
+    /* overflow: auto; */
+    margin-top: -200px;
+  }
+
+
+  
